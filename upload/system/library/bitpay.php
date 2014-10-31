@@ -303,7 +303,7 @@ class Bitpay
                 $prettyName = "Buyer ".substr($key, 5);
                 if(!is_string($value)) {
                     $error = $this->errorString($prettyName.' needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 100)){
+                }elseif(strlen($value) > 100){
                     $error = $this->errorString($prettyName.' exceeds 100 character limit');
                 }
                 break;
@@ -325,14 +325,14 @@ class Bitpay
             case 'itemCode':
                 if(!is_string($value)) {
                     $error = $this->errorString('Item Code needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 100)){
+                }elseif(strlen($value) > 100){
                     $error = $this->errorString('Item Code exceeds 100 character limit');
                 }
                 break;
             case 'itemDesc':
                 if(!is_string($value)) {
                     $error = $this->errorString('Item Description needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 100)){
+                }elseif(strlen($value) > 100){
                     $error = $this->errorString('Item Description exceeds 100 character limit');
                 }
                 break;
@@ -349,7 +349,7 @@ class Bitpay
             case 'orderID':
                 if(!is_string($value)) {
                     $error = $this->errorString('Order ID needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 100)){
+                }elseif(strlen($value) > 100){
                     $error = $this->errorString('Order ID exceeds 100 character limit');
                 }
                 break;
@@ -361,14 +361,14 @@ class Bitpay
             case 'pluginInfo':
                 if(!is_string($value)) {
                     $error = $this->errorString('Plugin Info needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 50)){
+                }elseif(strlen($value) > 50){
                     $error = $this->errorString('Plugin Info exceeds 100 character limit');
                 }
                 break;
             case 'posData':
                 if(!is_string($value)) {
                     $error = $this->errorString('POS Data needs to be a string. Received '.gettype($value));
-                }elseif(strlen($value > 100)){
+                }elseif(strlen($value) > 100){
                     $error = $this->errorString('POS Data exceeds 100 character limit');
                 }
                 break;

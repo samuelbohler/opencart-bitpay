@@ -13,7 +13,7 @@ class ControllerPaymentBitpay extends Controller
      * @var string
      */
     private $payment_module_name  = 'bitpay';
-    private $plugin_verson        = '1.9.1';
+    private $plugin_verson        = '1.9.2';
 
     /**
      */
